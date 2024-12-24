@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Monkey Interpreter",
+        "image": "images/monkey.png",
+        "description": "Go-based interpreter with lexer, parser, and evaluator."
+    },
+    {
+        "title": "SmartFoodSelector",
+        "image": "images/food.png",
+        "description": "AI-powered food selection for smarter categorization."
+    }
+]
