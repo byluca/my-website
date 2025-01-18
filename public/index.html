@@ -1,118 +1,116 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Gianluca Lascaro - Software Engineer</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Foglio di stile -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container nav-container">
-        <a href="#home" class="logo">Gianluca Lascaro</a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#tech-stack">Tech Stack</a></li>
-          <li><a href="#github">GitHub</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gianluca Lascaro - Software Engineer</title>
+  <!-- Google Fonts -->
+  <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+  />
+  <!-- Foglio di stile -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#home" class="logo">Gianluca Lascaro</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://github.com/byluca" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+    <!-- Hamburger per mobile -->
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="home">
+  <div class="hero-content container">
+    <h1 id="typewriter"></h1>
+    <p class="subtitle">
+      Software Engineer | Innovator | Tech Enthusiast
+    </p>
+    <a href="#projects" class="cta-button">View My Work</a>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="section fade-in">
+  <div class="container">
+    <h2>📄 About Me</h2>
+    <p>
+      👋 Hello World, I'm <strong>Gianluca Lascaro</strong>. Welcome to my
+      website! 🚀 <br />
+      I'm a <strong>Software Engineer</strong> with a passion for
+      crafting innovative solutions, tackling challenging problems, and
+      exploring the limitless possibilities of technology.
+    </p>
+
+    <div class="about-cards">
+      <!-- Education -->
+      <div class="about-card">
+        <h3>🎓 Education</h3>
+        <p><strong>University of Bari Aldo Moro</strong> (2021–Present)</p>
+        <ul>
+          <li>🏆 Awarded 4 consecutive scholarships for academic excellence.</li>
+          <li>🔍 Specialized in <em>Algorithms</em>, <em>Operating Systems</em>, and <em>Software Engineering</em>.</li>
         </ul>
-        <!-- Hamburger per mobile -->
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-      <div class="hero-content container">
-        <h1 id="typewriter"></h1>
-        <p class="subtitle">
-          Software Engineer | Innovator | Tech Enthusiast
-        </p>
-        <a href="#projects" class="cta-button">View My Work</a>
+      <!-- Certifications -->
+      <div class="about-card">
+        <h3>📜 Certifications</h3>
+        <ul>
+          <li>🧠 Entrepreneurship (Cisco Networking Academy, March 2021)</li>
+          <li>🔒 Introduction to Cybersecurity (Jan 2021)</li>
+          <li>🌐 Introduction to IoT (Feb 2020)</li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="section fade-in">
-      <div class="container">
-        <h2>📄 About Me</h2>
-        <p>
-          👋 Hello World, I'm <strong>Gianluca Lascaro</strong>. Welcome to my
-          website! 🚀 <br />
-          I'm a <strong>Software Engineer</strong> with a passion for
-          crafting innovative solutions, tackling challenging problems, and
-          exploring the limitless possibilities of technology.
-        </p>
-
-        <div class="about-cards">
-          <!-- Education -->
-          <div class="about-card">
-            <h3>🎓 Education</h3>
-            <p><strong>University of Bari Aldo Moro</strong> (2021–Present)</p>
-            <ul>
-              <li>🏆 Awarded 4 consecutive scholarships for academic excellence.</li>
-              <li>🔍 Specialized in <em>Algorithms</em>, <em>Operating Systems</em>, and <em>Software Engineering</em>.</li>
-            </ul>
-          </div>
-          <!-- Certifications -->
-          <div class="about-card">
-            <h3>📜 Certifications</h3>
-            <ul>
-              <li>🧠 Entrepreneurship (Cisco Networking Academy, March 2021)</li>
-              <li>🔒 Introduction to Cybersecurity (Jan 2021)</li>
-              <li>🌐 Introduction to IoT (Feb 2020)</li>
-            </ul>
-          </div>
-        </div>
+<!-- Projects Section -->
+<section id="projects" class="section fade-in">
+  <div class="container">
+    <h2>🚀 Highlight Projects</h2>
+    <div class="carousel">
+      <div class="carousel-inner" id="projects-carousel">
+        <!-- Popolato da script.js -->
       </div>
-    </section>
+      <!-- Frecce del carousel -->
+      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section fade-in">
-      <div class="container">
-        <h2>🚀 Highlight Projects</h2>
-        <div class="carousel">
-          <div class="carousel-inner" id="projects-carousel">
-            <!-- Popolato da script.js -->
-          </div>
-          <!-- Frecce del carousel -->
-          <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-          <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-        </div>
-      </div>
-    </section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-content">
+    <p>Connect with me:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/gianluca-lascaro-68567b1b8/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/gianluca.lascaro/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+    </div>
+    <p class="copyright">
+      &copy; <span id="year"></span> Gianluca Lascaro. All rights reserved.
+    </p>
+  </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <p>Connect with me:</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/gianluca-lascaro-68567b1b8/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a href="https://www.instagram.com/gianluca.lascaro/" target="_blank" rel="noopener noreferrer">
-            Instagram
-          </a>
-        </div>
-        <p class="copyright">
-          &copy; <span id="year"></span> Gianluca Lascaro. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <!-- Script -->
-    <script src="script.js"></script>
-  </body>
+<!-- Script -->
+<script src="script.js"></script>
+</body>
 </html>
