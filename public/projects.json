@@ -2,11 +2,13 @@
     {
         "title": "Monkey Interpreter",
         "image": "images/monkey.png",
-        "description": "Go-based interpreter with lexer, parser, and evaluator."
+        "description": "Go-based interpreter with lexer, parser, and evaluator.",
+        "repoLink": "https://github.com/byluca/monkey-interpreter"
     },
     {
         "title": "SmartFoodSelector",
         "image": "images/food.png",
-        "description": "AI-powered food selection for smarter categorization."
+        "description": "AI-powered food selection for smarter categorization.",
+        "repoLink": ""
     }
 ]

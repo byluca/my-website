@@ -42,7 +42,7 @@ function erase() {
   }
 }
 
-// Avvia
+// Avvia il typewriter effect
 document.addEventListener("DOMContentLoaded", () => {
   if (typewriterSentences.length) setTimeout(type, 1000);
 });
@@ -61,35 +61,42 @@ window.addEventListener("scroll", () => {
 // CAROUSEL
 let currentSlide = 0;
 fetch("projects.json")
-  .then((response) => response.json())
-  .then((projects) => {
-    const carouselInner = document.getElementById("projects-carousel");
-    projects.forEach((p) => {
-      const projectDiv = document.createElement("div");
-      projectDiv.classList.add("project");
-      projectDiv.innerHTML = `
+    .then((response) => response.json())
+    .then((projects) => {
+      const carouselInner = document.getElementById("projects-carousel");
+      projects.forEach((p) => {
+        const projectDiv = document.createElement("div");
+        projectDiv.classList.add("project");
+        projectDiv.innerHTML = `
         <img src="${p.image}" alt="${p.title}">
         <h3>${p.title}</h3>
         <p>${p.description}</p>
+        ${
+            // Inserisci il link solo se il campo "repoLink" esiste
+            p.repoLink
+                ? `<a class="project-link" href="${p.repoLink}" target="_blank" rel="noopener noreferrer">Visualizza su GitHub</a>`
+                : ""
+        }
       `;
-      carouselInner.appendChild(projectDiv);
-    });
-    carouselInner.style.width = `${300 * projects.length}px`;
-  })
-  .catch((err) => console.error("Errore nel caricamento progetti:", err));
+        carouselInner.appendChild(projectDiv);
+      });
+      // Impostiamo la larghezza del carousel considerando 300px per card più 20px di margine
+      carouselInner.style.width = `${(300 + 20) * projects.length}px`;
+    })
+    .catch((err) => console.error("Errore nel caricamento progetti:", err));
 
 function prevSlide() {
   const carouselInner = document.getElementById("projects-carousel");
   const totalSlides = carouselInner.children.length;
   currentSlide = currentSlide > 0 ? currentSlide - 1 : totalSlides - 1;
-  carouselInner.style.transform = `translateX(-${currentSlide * 300}px)`;
+  carouselInner.style.transform = `translateX(-${currentSlide * 320}px)`; // 300px + 20px margine
 }
 
 function nextSlide() {
   const carouselInner = document.getElementById("projects-carousel");
   const totalSlides = carouselInner.children.length;
   currentSlide = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
-  carouselInner.style.transform = `translateX(-${currentSlide * 300}px)`;
+  carouselInner.style.transform = `translateX(-${currentSlide * 320}px)`; // 300px + 20px margine
 }
 
 // FOOTER YEAR
