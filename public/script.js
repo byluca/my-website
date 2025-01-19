@@ -74,7 +74,7 @@ fetch("projects.json")
         ${
             // Inserisci il link solo se il campo "repoLink" esiste
             p.repoLink
-                ? `<a class="project-link" href="${p.repoLink}" target="_blank" rel="noopener noreferrer">Visualizza su GitHub</a>`
+                ? `<a class="project-link" href="${p.repoLink}" target="_blank" rel="noopener noreferrer">Show on GitHub</a>`
                 : ""
         }
       `;
